@@ -12,7 +12,7 @@ node {
 
         stage 'Test'            
             sh '. /home/jen/env/bin/activate'
-            sh '/home/jen/env/bin/pip install -r requirements.txt --user'
+            sh '/home/jen/env/bin/pip install -r requirements.txt'
             sh '/home/jen/env/bin/python3.6 manage.py test --testrunner=djtrump.tests.test_runners.NoDbTestRunner'
 
         stage 'Deploy'
