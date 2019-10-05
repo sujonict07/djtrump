@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh jen@192.168.100.249 <<EOF
+ssh jen@192.168.100.249 /bin/bash <<EOF
   cd djtrump
   git pull
   source /home/jen/env/bin/pip/activate
