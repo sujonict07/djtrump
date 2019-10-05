@@ -6,6 +6,6 @@ sshpass -p jen ssh -o StrictHostKeyChecking=no jen@192.168.100.249 /bin/bash <<E
   source /home/jen/env/bin/activate
   pip install -r requirements.txt
   ./manage.py migrate
-  sudo supervisorctl restart djtrump
+  ./manage.py runserver 0.0.0.0:8100 &
   exit
 EOF
